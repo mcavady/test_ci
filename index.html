@@ -1,8 +1,413 @@
-<!doctype>
-<!-- done badly to force test fail -->	
+<!DOCTYPE html>
 <html>
+	<head><!-- InstanceBeginEditable name="title" --> 
+	<title>Responsive tutorial - James Mcavady - MMU</title>
+	<!-- InstanceEndEditable -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<!-- InstanceBeginEditable name="meta" -->	
+	<meta name="description" content="This is my home page for the acw2 task, this page is the landing page of the site and contains a general introduction about my self and the site. 'My name is James and I am a student at Manchester Metropolitan University, and this is my site.........'"/>
+	<meta name="keywords" content="HTML,CSS,James, Mcavady, MMU, Home, excerpt list"/>
+	<meta name="author" content="James Mcavady"/>
+	<!-- InstanceEndEditable -->
+	<link rel="stylesheet" type="text/css" href="http://li197-84.members.linode.com/ico_rwd/A.style.css.pagespeed.cf.TukkfE96oM.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'/><!-- link up the google fonts-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="IEfallbacks.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="IEfallbacks.css" />
+	<![endif]-->
+</head>
 <body>
-</body>
-</p
-P>
-<html>
+<div id="screenReader"><!-- access for visually impaired -->
+<a href="#menu" title="Go to the site navigation.">Skip to the navigation</a>
+<a href="#content" title="Go to the page content.">Skip to the page content</a>
+</div>
+	<header>
+	<div id="header">
+		<!-- InstanceBeginEditable name="banner" -->
+		<div id="banner" role="banner">
+		<ul>
+			<li><img width="375" height="890" alt="Home" title="Responsive CSS Tutorial." src="http://li197-84.members.linode.com/ico_rwd/media/375x890xbanner.png.pagespeed.ic.qI2VNC1Z4p.png"/></li>
+			<!--this is as small as I could get the image in terms of file size -->
+			<li>
+			<hgroup>
+				<h1>Responsive web pages - tutorial - Home page</h1>
+				<h2>Tutorial by James Mcavady - 09647588 - Dec 2012</h2>
+			</hgroup>
+			</li>
+		<!-- InstanceEndEditable -->
+		</ul>
+		</div><!-- end the banner -->
+	</div><!--end the header-->
+	<div id="pageHook"> </div><!-- page hook for skip to -->
+	</header>
+	<nav role="navigation">
+		<div id="menu" role="navigation">
+			<!-- InstanceBeginEditable name="navigation" -->
+			<ul id="menu-list">
+			<li>
+				<a href="intro.html" title="Home - Return to the main page.">Introduction
+				<img width="112" height="112" alt="Home" title="Home - Return to the main page." src="data:image/png;base64,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"/>
+				</a>
+			</li>
+			<li class="currentGreen">
+				<a href="index.html" title="Home - Return to the excerpts.">Excerpts
+				<img width="112" height="112" alt="Home" title="Home - Return to the main page." src="data:image/png;base64,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"/>
+				</a>
+			</li>
+			<li>
+				<a href="index.html#step1" title="Step 1 - the tools.">step 1 - The tools
+				<img width="112" height="112" alt="Step 1" title="excerpt for step 1." src="http://li197-84.members.linode.com/ico_rwd/btns/112x112xcircleBlue.png.pagespeed.ic.x9nxDhCBYI.png"/>
+				</a>
+			</li>
+			<li>
+				<a href="index.html#step2" title="Step 2 - HTML5 frame.">step 2 - The html
+				<img width="112" height="112" alt="Step 2" title="excerpt for step 2." src="http://li197-84.members.linode.com/ico_rwd/btns/112x112xcircleBlue.png.pagespeed.ic.x9nxDhCBYI.png"/>
+				</a>
+			</li>
+			<li>
+				<a href="index.html#step3" title="Step 3 - CSS basic.">step 3 - Basic CSS
+				<img width="112" height="112" alt="Step 3" title="excerpt for step 3." src="http://li197-84.members.linode.com/ico_rwd/btns/112x112xcircleBlue.png.pagespeed.ic.x9nxDhCBYI.png"/>
+				</a>
+			</li>
+			<li>
+				<a href="index.html#step4" title="Step 4 - CSS responsive.">step 4 - Responsive CSS
+				<img width="112" height="112" alt="Step 4" title="excerpt for step 4." src="http://li197-84.members.linode.com/ico_rwd/btns/112x112xcircleBlue.png.pagespeed.ic.x9nxDhCBYI.png"/>
+				</a>
+			</li>
+			<li>
+				<a href="index.html#step5" title="Step 5 - Apply the response.">step 5 - Making it responsive
+				<img width="112" height="112" alt="excerpt for step 5" title="excerpt for step 5." src="http://li197-84.members.linode.com/ico_rwd/btns/112x112xcircleBlue.png.pagespeed.ic.x9nxDhCBYI.png"/>
+				</a>
+			</li>
+			<li>
+				<a href="index.html#step6" title="Step 6 - Testing it all out.">step 6 - Testing with the tools
+				<img width="112" height="112" alt="excerpt for step 6" title="excerpt for step 6." src="http://li197-84.members.linode.com/ico_rwd/btns/112x112xcircleBlue.png.pagespeed.ic.x9nxDhCBYI.png"/>
+				</a>
+			</li>
+			<li>
+				<a href="index.html#fr" title="Further reading page.">Further reading
+				<img width="112" height="112" alt="Futher Reading" title="except for further reading." src="data:image/png;base64,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"/>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.ico.mmu.ac.uk/09647588/" title="First site - Return to the my main site.">Back to my main page
+				<img width="112" height="112" alt="Home" title="Home - Return to the main site." src="data:image/png;base64,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"/>
+				</a>
+			</li>
+			</ul>
+		</div><!-- end menu -->
+		</nav>
+		<div id="mobilemenu">
+			<ul id="menu-list-mobile">
+			<li class="currentGreen">
+				<a href="index.html#intro" title="Home - Return to the main page.">Introduction</a>
+			</li>
+			<li>
+				<a href="index.html#step1" title="Step 1 - the tools.">step 1 - The tools</a>
+			</li>
+			<li>
+				<a href="index.html#step2" title="Step 2 - HTML5 frame.">step 2 - The html</a>
+			</li>
+			<li>
+				<a href="index.html#step3" title="Step 3 - CSS basic.">step 3 - Basic CSS</a>
+			</li>
+			<li>
+				<a href="index.html#step4" title="Step 4 - CSS responsive.">step 4 - Responsive CSS</a>
+			</li>
+			<li>
+				<a href="index.html#step5" title="Step 5 - Apply the response.">step 5 - Making it responsive</a>
+			</li>
+			<li>
+				<a href="index.html#step6" title="Step 6 - Testing it all out.">step 6 - Testing with the tools</a>
+			</li>
+			<li>
+				<a href="index.html#fr" title="Further reading page.">Further reading</a>
+			</li>
+			<li>
+				<a href="http://www.ico.mmu.ac.uk/09647588/" title="First site - Return to the my main site.">Back to my main page</a>
+			</li>
+			</ul>
+		</div><!-- end mobile menu -->
+		<!-- InstanceEndEditable -->
+		<div id="content" role="main">
+			<div id="intro" class="step">
+				<hgroup><!-- InstanceBeginEditable name="heading" -->
+				<h2>HTML5 responsive introduction</h2>
+				<h3 class="currentGreen">Why this tutorial?;</h3>
+				<!-- InstanceEndEditable --></hgroup>
+				<!-- InstanceBeginEditable name="excerpt1" -->
+				<p><img width="280" height="112" alt="Home" title="The introduction." src="http://li197-84.members.linode.com/ico_rwd/media/280x112xarticleFillerImg.png.pagespeed.ic.xf8Snk5Yn9.png"/>
+Right let's get down to it, this is a framework that I have been working on for a little time, I will be taking this further to get it “right” for all.
+The aim of this frame work is to build from mobile up, I have themed the navigation for this framework on the “metro” theme that the new windows phones have. I do like the titles but they may take up a little more screen space than I would like. . . . . . . . </p>
+				<!-- InstanceEndEditable -->
+			<div class="contentNav"><!-- for the back to btns -->
+				<div class="Rmore">
+					<a title="introduction to" href="intro.html">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<div class="contentNav-mobile"><!-- for the back to btns mobile -->
+			<div class="Rmore">
+				<a title="Next" href="step1.html#skipMenuMobile">To the next step </a>
+				<div class="RmoreEnd">
+				</div>
+			</div>
+			<div class="bkTop">
+				<a title="Back to the menu" href="#banner">Go back to the top</a>
+				<div class="bkTopEnd">
+				</div>
+			</div>
+		</div><!-- for the back to btns -->
+			<!-- end the content nav -->			
+			</div><!-- end step-->
+			<div id="step1" class="step">
+				<hgroup><!-- InstanceBeginEditable name="heading" -->
+				<h2>HTML5 responsive tools</h2>
+				<h3 class="currentBlue">Step 1 - the tools;</h3>
+				<!-- InstanceEndEditable --></hgroup>
+				<!-- InstanceBeginEditable name="excerpt2" -->
+				<p><img width="280" height="112" alt="Home" title="The tools." src="http://li197-84.members.linode.com/ico_rwd/media/280x112xarticleFillerImg.png.pagespeed.ic.xf8Snk5Yn9.png"/>
+So before we start getting all responsive, it is time to get the tools we need for checking our work, you will need the following 3 things to get started;. . . . . . . . </p>
+				<!-- InstanceEndEditable -->
+			<div class="contentNav"><!-- for the back to btns -->
+				<div class="Rmore">
+					<a title="Step 1" href="step1.html">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<div class="contentNav-mobile"><!-- for the back to btns mobile -->
+				<div class="Rmore">
+					<a title="Step 1" href="step1.html#skipMenuMobile">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>			
+			<!-- end the content nav -->
+			</div><!-- end step-->
+			<div id="step2" class="step">
+				<hgroup><!-- InstanceBeginEditable name="heading" -->
+				<h2>HTML5 framework</h2>
+				<h3 class="currentBlue">Step 2 - HTML5 frame;</h3>
+				<!-- InstanceEndEditable --></hgroup>
+				<!-- InstanceBeginEditable name="excerpt3" -->
+				<p><img width="280" height="112" alt="Home" title="HTML 5." src="http://li197-84.members.linode.com/ico_rwd/media/280x112xarticleFillerImg.png.pagespeed.ic.xf8Snk5Yn9.png"/>
+For this tutorial I have made and will be using code in sections for speed, also to keep focus on the responsive topic. 
+The following HTML5 took some time to get right, many browser types= “many ways to skin a cat”. . . . . . . . </p>
+				<!-- InstanceEndEditable -->
+			<div class="contentNav"><!-- for the back to btns -->
+				<div class="Rmore">
+					<a title="Step 2" href="step2.html">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<div class="contentNav-mobile"><!-- for the back to btns mobile -->
+				<div class="Rmore">
+					<a title="Step 2" href="step2.html#skipMenuMobile">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<!-- end the content nav -->			
+			</div><!-- end step-->
+			<div id="step3" class="step">
+				<hgroup><!-- InstanceBeginEditable name="heading" -->
+				<h2>HTML5 basic CSS</h2>
+				<h3 class="currentBlue">Step 3 - basic CSS;</h3>
+				<!-- InstanceEndEditable --></hgroup>
+				<!-- InstanceBeginEditable name="excerpt4" -->
+				<p><img width="280" height="112" alt="Home" title="The basic CSS." src="http://li197-84.members.linode.com/ico_rwd/media/280x112xarticleFillerImg.png.pagespeed.ic.xf8Snk5Yn9.png"/>
+In this step you will be placing the CSS into the “css” folder, to do this navigate to the “css” folder you created, and create a css file called “main.css”. . . . . . . . . </p>
+				<!-- InstanceEndEditable -->
+			<div class="contentNav"><!-- for the back to btns -->
+				<div class="Rmore">
+					<a title="Step 3" href="step3.html">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<div class="contentNav-mobile"><!-- for the back to btns mobile -->
+				<div class="Rmore">
+					<a title="Step 3" href="step3.html#skipMenuMobile">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<!-- end the content nav -->
+			</div><!-- end step 3-->
+			<div id="step4" class="step">
+				<hgroup><!-- InstanceBeginEditable name="heading" -->
+				<h2>HTML5 responsive CSS</h2>
+				<h3 class="currentBlue">Step 4 - Responsive CSS;</h3>
+				<!-- InstanceEndEditable --></hgroup>
+				<!-- InstanceBeginEditable name="excerpt5" -->
+				<p><img width="280" height="112" alt="Home" title="The responsive CSS." src="http://li197-84.members.linode.com/ico_rwd/media/280x112xarticleFillerImg.png.pagespeed.ic.xf8Snk5Yn9.png"/>
+Now for the fun part! Time to get all responsive, in the previous steps you should have created a “main.css” in the “css” folder. . . . . . . . . </p>
+				<!-- InstanceEndEditable -->
+			<div class="contentNav"><!-- for the back to btns -->
+				<div class="Rmore">
+					<a title="Step 4" href="step4.html">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<div class="contentNav-mobile"><!-- for the back to btns mobile -->
+				<div class="Rmore">
+					<a title="Step 4" href="step4.html#skipMenuMobile">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<!-- end the content nav -->
+			</div><!-- end step 4-->
+			<div id="step5" class="step">
+				<hgroup><!-- InstanceBeginEditable name="heading" -->
+				<h2>HTML5 responsive CCS application</h2>
+				<h3 class="currentBlue">Step 5 - apply the response's;</h3>
+				<!-- InstanceEndEditable --></hgroup>
+				<!-- InstanceBeginEditable name="excerpt6" -->
+				<p><img width="280" height="112" alt="Home" title="The application of the CSS." src="http://li197-84.members.linode.com/ico_rwd/media/280x112xarticleFillerImg.png.pagespeed.ic.xf8Snk5Yn9.png"/>
+Open up the “main.css” you created in the previous step and scroll down to the bottom, this is were the responsive design CSS goes. . . . . . . . . </p>
+				<!-- InstanceEndEditable -->
+			<div class="contentNav"><!-- for the back to btns -->
+				<div class="Rmore">
+					<a title="Step 5" href="step5.html">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<div class="contentNav-mobile"><!-- for the back to btns mobile -->
+				<div class="Rmore">
+					<a title="Step 5" href="step5.html#skipMenuMobile">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<!-- end the content nav -->
+			</div><!-- end step-->
+			<div id="step6" class="step">
+				<hgroup><!-- InstanceBeginEditable name="heading" -->
+				<h2>HTML5 responsive design testing</h2>
+				<h3 class="currentBlue">Step 6 - Testing it all out;</h3>
+				<!-- InstanceEndEditable --></hgroup>
+				<!-- InstanceBeginEditable name="excerpt6" -->
+				<p><img width="280" height="112" alt="Home" title="Testing it all out." src="http://li197-84.members.linode.com/ico_rwd/media/280x112xarticleFillerImg.png.pagespeed.ic.xf8Snk5Yn9.png"/>
+So you now have the tools to test it all out, there is one last thing to testing and adjusting your site, one of the tools that I asked you to install was the “fireBug” plugin. This is an amazing tool, this will help you out a lot when figuring out what to do best for particular elements on the page when the screen width is small. . . . . . . . </p>
+				<!-- InstanceEndEditable -->
+			<div class="contentNav"><!-- for the back to btns -->
+				<div class="Rmore">
+					<a title="Step 6" href="step6.html">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<div class="contentNav-mobile"><!-- for the back to btns mobile -->
+				<div class="Rmore">
+					<a title="Step 6" href="step6.html#skipMenuMobile">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>			
+			<!-- end the content nav -->
+			</div><!-- end step-->
+			<div id="fr" class="step">
+				<hgroup><!-- InstanceBeginEditable name="heading" -->
+				<h2>HTML5 responsive reading to be done</h2>
+				<h3 class="currentRed">Further reading and links;</h3>
+				<!-- InstanceEndEditable --></hgroup>
+				<!-- InstanceBeginEditable name="excerpt7" -->
+				<p><img width="280" height="112" alt="Home" title="Further reading." src="http://li197-84.members.linode.com/ico_rwd/media/280x112xarticleFillerImg.png.pagespeed.ic.xf8Snk5Yn9.png"/>
+This section is full of links to articles and tools that you might want to try out. . . . . . . . </p>
+				<!-- InstanceEndEditable -->
+			<div class="contentNav"><!-- for the back to btns -->
+				<div class="Rmore">
+					<a title="Further reading" href="fr.html">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<div class="contentNav-mobile"><!-- for the back to btns mobile -->
+				<div class="Rmore">
+					<a title="Further reading" href="fr.html#skipMenuMobile">Read more </a>
+					<div class="RmoreEnd"></div>
+				</div>		
+				<div class="bkTop">
+					<a title="Back to the menu" href="#banner">Go back to the top</a>
+					<div class="bkTopEnd"></div>
+				</div>
+			</div>
+			<!-- end the content nav -->
+			</div><!-- end step-->   
+		</div><!-- end content-->
+		<footer role="contentinfo">
+			<div id="footer" role="contentinfo"><!-- InstanceBeginEditable name="footer" -->
+				<div id="footerLinks">
+					<a title="W3C HTML Validation Service" href="http://validator.w3.org/check?uri=referer" target="_blank">HTML Validation</a>
+				<div class="seperator">|</div>
+					<a title="w3c validation" href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS Validation</a>
+				<div class="seperator">|</div>
+					<a title="Lint code checker" href="http://lint.brihten.com/html/report?u=http%3A//www.ico.mmu.ac.uk/09647588/portfolio/tutorial/index.html&amp;s=1111110" target="_blank">Lint html</a>
+				<div class="seperator">|</div>
+					<a title="My hobby site zero point productions" href="http://www.zeropointproductions.co.uk" target="_blank">My hobby site</a>
+				<div class="seperator">|</div>
+					<a title="My blog jsmcavady.co.uk" href="http://www.jsmcavady.co.uk" target="_blank">My blog</a>
+				<div class="seperator">|</div>
+					<a title="My new site www.responsivedeveloper.com" href="http://www.responsivedeveloper.com" target="_blank">My new site</a>
+				<div class="seperator">|</div>
+				<a title="Follow me on Twitter" href="https://twitter.com/JamesMcavady" target="_blank">Follow me on twitter</a>
+				</div><!--end the footer links -->				
+				<!-- InstanceEndEditable -->
+			</div><!-- end html5 footer-->
+		</footer>
+<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-36995106-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+	</body>
+</html>
+
+
